@@ -91,8 +91,8 @@ public class TicTacToe {
         for (int i = 0; i < 3; i++) {
             if (diagonal[i].equals("0") || diagonal[i].equals("-")) check = false;
         }
-        if (check) return "X"; // если не нашли 0 в диагонали то победа за Х
-        else {                 // иначе все тоже самое для 0
+        if (check) return "X"; // если не нашли 0 в диагонали, то победа за Х
+        else {                 // иначе все то же самое для 0
             check = true;
             for (int i = 0; i < 3; i++) {
                 if (diagonal[i].equals("X") || diagonal[i].equals("-")) check = false;
