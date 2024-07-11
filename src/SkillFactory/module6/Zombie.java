@@ -8,8 +8,17 @@ public class Zombie extends Monster {
 
     @Override
     public void growl() {
-        System.out.print("Raaaauuughhhh");
+        System.out.print(scream);
         super.growl();
+    }
+
+    public void growl(boolean loud) {
+        if (!loud) {
+            growl();
+        } else {
+            System.out.print(scream.toUpperCase());
+            super.growl();
+        }
     }
 
     @Override
@@ -17,4 +26,6 @@ public class Zombie extends Monster {
         super.attack();
         growl();
     }
+
+    public static String scream = "Raaaauuughhhh ";
 }

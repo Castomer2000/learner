@@ -1,6 +1,5 @@
 package SkillFactory;
 
-import SkillFactory.module6.Main;
 import SkillFactory.module6.Secret;
 
 public class HackIt extends Secret {
